@@ -6,20 +6,17 @@ public class mainForm {
 
     private JPanel mainPanel;
     private JButton encryptButton;
-    private JTextField encTextField;
     private JTextField plainTextField;
+    private JTextField encTextField;
 
 
     public mainForm() {
-        encryptButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String plainText = plainTextField.getText();
-                try {
-                    encTextField.setText(AES.encrypt(plainText));
-                } catch (Exception exception) {
-                    exception.printStackTrace();
-                }
+        encryptButton.addActionListener(e -> {
+            String plainText = plainTextField.getText();
+            try {
+                encTextField.setText(AES.encrypt(plainText));
+            } catch (Exception exception) {
+                exception.printStackTrace();
             }
         });
     }
