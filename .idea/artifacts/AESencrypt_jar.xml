@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AESencrypt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AESencrypt_jar</output-path>
+    <root id="archive" name="AESencrypt.jar">
+      <element id="module-output" name="AESencrypt" />
+    </root>
+  </artifact>
+</component>
