@@ -26,7 +26,10 @@ public class mainForm {
         JFrame frame = new JFrame("AES Encryptor");
         frame.setContentPane(new mainForm().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(5000,5000);
+        frame.setLocation(200,200);
         frame.pack();
+
         frame.setVisible(true);
     }
 }
